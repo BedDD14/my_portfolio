@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="saya.jpg" alt="Site Logo" class="site-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#portfolio" class="menu-text">Portofolio</a></li>
+                <li><a href="#about" class="menu-text">About Me</a></li>
+                <li><a href="#contact" class="menekuni">Contact</a></li>
+            </ul>
+        </nav>
+        <h2 class="scroling-text">Muhammad Arif Rahmansyah</h2>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h2>PORTOFOLIO</h2>
+            <h3>Muhammad arif Rahmansyah</h3>
+            <p>Saat ini, saya adalah mahasiswa semester 5 yang sedang menekuni bidang teknologi dan pemrograman. 
+                Saya memiliki minat yang besar terhadap dunia pengembangan web dan teknologi, dan saya baru saja mulai mempelajari beberapa
+                bahasa pemrograman seperti HTML, CSS, JavaScript, dan Python </p>
+            <a href="#contact" class="btn">send a message</a>
+        </div>
+        <div class="intro-image">
+            <img src="saya.jpg" alt="Intro Image">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Bidang Keahlian</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item" onclick="HighlightItem(this)">UI/UX</div>
+            <div class="portfolio-item" onclick="HighlightItem(this)">Web Desainer</div>
+            <div class="portfolio-item" onclick="HighlightItem(this)">Database Analysis</div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Nama saya Arif Rahmansyah, dan saya adalah mahasiswa semester 5 berusia 21 tahun
+            yang saat ini sedang menempuh pendidikan di Universitas Perjuangan.
+            Saya sedang mendalami bidang Web Desain dengan fokus Pemrograman Web, Desain UI/UX, atau Pengembangan Aplikasi</p>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-container">
+            <div class="social-media">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:muhammadarifrahmansyah06@gmail.com">muhammadarifrahmansyah06@gmail.com</a></p>
+                <p>
+                    <img src="icons8-facebook-20.png" alt="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100036533798850&mibextid=ZbWKwL" target="_blank">Facebook</a>
+                </p>
+                <p>
+                    <img src="icons8-instagram-20.png" alt="Instagram">
+                    <a href="https://www.instagram.com/arifrahmansyah___" target="_blank">Instagram</a>
+                </p>
+            </div>
+    
+            <div class="message-box">
+                <h2>Send a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Muhammad Arif Rahmansyah</p>
+    </footer>  
+    <script src="main.js"></script>
+</body>
+
+</html>
